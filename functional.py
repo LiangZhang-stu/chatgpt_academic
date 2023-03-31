@@ -6,6 +6,17 @@ from toolbox import clear_line_break
 
 def get_functionals():
     return {
+        "中译英(PLUS)":{
+            "Prefix":   r"I want you to act as an English translator, spelling corrector and improver. " +
+                        r"I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. " + 
+                        r"I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. " + 
+                        r"Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. " +
+                        r"Please translate following sentence to English with academic writing, and provide some related authoritative examples:" + "\n\n",
+
+            "Suffix":   r"",
+            "Color":    r"secondary",    # 按钮颜色
+            },
+        
         "英语学术润色": {
             # 前言
             "Prefix":   r"Below is a paragraph from an academic paper. Polish the writing to meet the academic style, " +
@@ -36,6 +47,10 @@ def get_functionals():
         },
         "学术中译英": {
             "Prefix":   r"Please translate following sentence to English with academic writing, and provide some related authoritative examples:" + "\n\n",
+            "Suffix":   r"",
+        },
+        "学术中译英（带示例，一般现在时态）": {
+            "Prefix":   r"Please translate following sentence to English with academic writing, advanced English sentences, and the general present tense, and provide some examples:" + "\n\n",
             "Suffix":   r"",
         },
         "英译中": {
