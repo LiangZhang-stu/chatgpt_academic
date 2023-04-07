@@ -50,7 +50,10 @@ def get_functionals():
             "Suffix":   r"",
         },
         "学术中译英（带示例，一般现在时态）": {
-            "Prefix":   r"Please translate following sentence to English with academic writing, advanced English sentences, and the general present tense, and provide some examples:" + "\n\n",
+            "Prefix":   r"Please translate following sentence to English with academic writing. " + 
+                        r"improve the spelling, grammar, clarity, concision and overall readability. " +
+                        r"Guarantee the use of the present tense for verbs. " +
+                        r"provide some examples:" + "\n\n",
             "Suffix":   r"",
         },
         "英译中": {
